@@ -104,7 +104,7 @@ Code:
     Converted Quantity from float to integer after cleaning.
 
 Code:
- #####  ~ Convert Transaction Date to datetime
+ #####  Convert Transaction Date to datetime
     df['Transaction Date'] = pd.to_datetime(df['Transaction Date'], errors='coerce')
 
 ######  Convert Quantity to integer
@@ -136,6 +136,7 @@ Validated that Total Spent equals Price Per Unit × Quantity.
 Recalculated Total Spent where discrepancies were found.
 
 ->Code:
+   
     df['Total Spent'] = df['Price Per Unit'] * df['Quantity']
 
 ## 2.5 Final Validation
@@ -147,5 +148,7 @@ Recalculated Total Spent where discrepancies were found.
     Confirmed correct data types and logical consistency.
 
 -> Code:
+    
     df.info()
+    
     df.isnull().sum()
