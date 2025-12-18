@@ -82,7 +82,7 @@ The objective of this step is to clean and prepare the dataset by addressing the
     
     Rows with missing values in critical numeric columns (Price Per Unit, Quantity) were removed.
 
-    Missing values in Discount Applied were filled with "No", assuming no discount when not specified.
+    Missing values in Discount Applied were filled with "False", assuming no discount when not specified.
 
     Rows with missing Item names were removed as item-level analysis would be affected.
 
